@@ -1,0 +1,116 @@
+/home/aetooc/anaconda3/lib/python3.9/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.8.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+/home/aetooc/anaconda3/lib/python3.9/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.4' currently installed).
+  from pandas.core import (
+2024-03-13 11:00:55.411531: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-03-13 11:00:55.451200: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-03-13 11:00:55.451504: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-13 11:00:56.149099: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/tools/__init__.py:63: LangChainDeprecationWarning: Importing tools from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.tools import DuckDuckGoSearchRun`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_transports/default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_transports/default.py", line 228, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 93, in handle_request
+    self._send_request_headers(**kwargs)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 152, in _send_request_headers
+    event = h11.Request(
+  File "/home/aetooc/anaconda3/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/mistralai/client.py", line 110, in _request
+    with self._client.stream(
+  File "/home/aetooc/anaconda3/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_client.py", line 857, in stream
+    response = self.send(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_client.py", line 901, in send
+    response = self._send_handling_auth(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_client.py", line 929, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_transports/default.py", line 228, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aetooc/anaconda3/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/httpx/_transports/default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.LocalProtocolError: Illegal header value b'Bearer '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aetooc/crewai/app.py", line 82, in <module>
+    result = crew.kickoff()
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/crew.py", line 127, in kickoff
+    return self._sequential_loop()
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/crew.py", line 134, in _sequential_loop
+    task_output = task.execute(task_output)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/task.py", line 56, in execute
+    result = self.agent.execute_task(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/agent.py", line 146, in execute_task
+    result = self.agent_executor.invoke(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/chains/base.py", line 163, in invoke
+    raise e
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/chains/base.py", line 153, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/agents/executor.py", line 59, in _call
+    next_step_output = self._take_next_step(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/agents/agent.py", line 1138, in _take_next_step
+    [
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/agents/agent.py", line 1138, in <listcomp>
+    [
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/crewai/agents/executor.py", line 103, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain/agents/agent.py", line 397, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 2460, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 2447, in transform
+    yield from self._transform_stream_with_config(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 1527, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)  # type: ignore
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 2411, in _transform
+    for output in final_pipeline:
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 1051, in transform
+    for chunk in input:
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 4194, in transform
+    yield from self.bound.transform(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/runnables/base.py", line 1068, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 258, in stream
+    raise e
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_core/language_models/chat_models.py", line 241, in stream
+    for chunk in self._stream(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/langchain_mistralai/chat_models.py", line 344, in _stream
+    for chunk in self.completion_with_retry(
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/mistralai/client.py", line 255, in chat_stream
+    for json_streamed_response in response:
+  File "/home/aetooc/anaconda3/lib/python3.9/site-packages/mistralai/client.py", line 136, in _request
+    raise MistralException(f"Unexpected exception ({e.__class__.__name__}): {e}") from e
+mistralai.exceptions.MistralException: Unexpected exception (LocalProtocolError): Illegal header value b'Bearer '
+

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "505491763422",
+    "project_id": "bookkaru-50df7",
+    "storage_bucket": "bookkaru-50df7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505491763422:android:043144fa29b42aba89524f",
+        "android_client_info": {
+          "package_name": "com.lashari.bookkaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505491763422-1sq5sv82tdmfjk368bo0uhf9ohlup3t3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lashari.bookkaro",
+            "certificate_hash": "445117e235f159bfd8032e53da10c36dbfca8474"
+          }
+        },
+        {
+          "client_id": "505491763422-q7oi1s6kigcn7ar9a6pumj3l7g5t701t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrkT0-QJWJHi4te1DOm5U9_UVDYLpXwiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505491763422-q7oi1s6kigcn7ar9a6pumj3l7g5t701t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
